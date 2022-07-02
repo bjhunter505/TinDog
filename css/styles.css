@@ -33,6 +33,13 @@ body {
     text-align: center;
 }
 
+#cta {
+    padding: 5%;
+    background-color: #ff4c68;
+    text-align: center;
+    color: #fff;
+}
+
 /* Containers */
 
 .container-fluid {
@@ -160,6 +167,14 @@ p {
     h2 {
         font-size: 2.5rem;
         line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.7rem;
     }
 
 }
