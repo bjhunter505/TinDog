@@ -126,7 +126,7 @@ p {
 }
 
 .testimonial-image {
-    width: 10%;
+    width: 120px;
     border-radius: 50%;
     margin: 20px;
 }
@@ -143,7 +143,7 @@ p {
     .title-image {
         position: static;
         transform: rotate(0deg); /* Equal to rotate(25deg) */
-        width: 200px;
+        width: 270px;
         text-align: centre;
     }
 
@@ -152,18 +152,14 @@ p {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.2;
         font-weight: 900;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.2;
-    }
-
-    h3 {
-        font-size: 1rem;
     }
 
 }
