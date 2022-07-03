@@ -1,85 +1,272 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
-	<title>Bens Pirate Page</title>
-	<link rel="stylesheet" href="css/Stylesheet.css">
-	<link rel="icon" href="images/favicon.ico" />
+	<meta charset="utf-8">
+	<title>TinDog</title>
+
+	<!--These links for Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--These links for fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!--These validation libraries need to be
+	included for unobtrusive validation -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+
+	<!--This link for fontawesome icons -->
+	<script src="https://kit.fontawesome.com/5496eef964.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 
-	<div class="top-container">
+<section id="title">
+	<div class="container-fluid">
 
-		<img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
-		<h1>Hi ,   I'm Ben</h1>
-		<br/>
-		<h2>an engineer, project manager, <span class="software-text">software</span> engineer and <span class="pirate-text">a Pirate</span>.</h2>
-		<br />
-		<img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
-		<img src="images/mountain.png" alt="mountain-img" />
-		<div class="ship-container">
-			<img class="ship" src="images/pirate-ship2.png" alt="pirate-ship-img" style="width: 200px; height: 190px; right: 0px; bottom: 0px;" />
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="">tindog</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#footer">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cta">Download</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Title -->
+
+		<div class="row">
+			<div class="col-lg-6">
+				<h1>Meet new and interesting dogs nearby.</h1>
+
+				<!-- Button Apple -->
+				<button type="button" class="btn btn-dark btn-md download-button">
+					<i class="fa-brands fa-apple"></i>
+					Download
+				</button>
+
+				<!-- Button Windows -->
+				<button type="button" class="btn btn-outline-light btn-md download-button">
+					<i class="fa-brands fa-windows"></i>
+					Download
+				</button>
+
+				<!-- Button Google Play -->
+				<button type="button" class="btn btn btn-dark btn-md download-button">
+					<i class="fa-brands fa-google-play"></i>
+					Download
+				</button>
+			</div>
+
+			<div class="col-lg-6">
+				<img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+			</div>
+
 		</div>
 
 	</div>
-<div class="middle-container">
-	<div class="profile">
-		<img class="profile-pic" src="images/pirate_ben.JPG" alt="Ben's profile picture" style="width:150px;height:200px;" />
-		<br/>
-		<h2>Avast ye!</h2>
-		<p>A highly skilled Engineering Manager from a product design and development background, with Project Management and Software Engineering experience. Having a track record in leading cross functional teams, across multiple projects and geographically diverse locations. Experienced with global regulatory frameworks, and hardware / software development. </p>
 
-	</div>
-	<hr>
-	<div class="skills">
-		<h2>My Pirate Skills.</h2>
-		<br />
-		<div class="skill-row">
-			<img class="programmer-image" src="images/programmer.gif" alt="programmer-gif" style="width:250px;height:250px;">
-			<h3>Software Engineering</h3>
-			<ul class="list-left">
-				<li>Experienced working as a software engineer.</li>
-				<li>Skilled in multiple software languages (Java, C, C++, Pascal and upskilling on Python & JavaScript).</li>
-				<li>Tools: Eclipse, IntelliJ, PyCharm, WireShark, Linux/Unix, SQL Developer, MySQL, AWS, Atlassian Jira</li>
-			</ul>
-		</div>
-		<br/>
-		<div class="skill-row">
-			<img class="project-manager-image" src="images/project-manager.gif" alt="project-gif" style="width:250px;height:250px;">
-			<h3>Project Management</h3>
-			<ul class="list-left">
-				<li>Project Planning and Execution: both waterfall and agile environments. </li>
-				<li>Financial Management: financial models, budgets. </li>
-				<li>Project Reporting: Stakeholder feedback.</li>
-				<li>People / Team Management: diverse project teams.</li>
-				<li>Expertise: Grad Dip Mgt, MBA, PMI Certified project manager.</li>
-				<li>Tools: Microsoft Project, Objective ECM, Atlassian JIRA, Scrum, etc.</li>
-			</ul>
+
+</section>
+
+
+	<!-- Features -->
+
+<section id="features">
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="feature-box col-lg-4">
+				<i class="fa-solid fa-circle-check feature-icon fa-4x"></i>
+				<h3><br />Easy to use.</h3>
+				<p>So easy to use, even your dog could do it.</p>
+			</div>
+
+			<div class="feature-box col-lg-4">
+				<i class="fa-solid fa-bullseye feature-icon fa-4x"></i>
+				<h3><br />Elite Clientele</h3>
+				<p>We have all the dogs, the greatest dogs.</p>
+			</div>
+
+			<div class="feature-box col-lg-4">
+				<i class="fa-solid fa-heart feature-icon fa-4x"></i>
+				<h3><br />Guaranteed to work.</h3>
+				<p>Find the love of your dog's life or your money back.</p>
+			</div>
+
 		</div>
 	</div>
-	<hr>
-	<div class="contact-me">
-		<h2>Get In Touch</h2>
-		<br/>
-		<h3>I’m currently available ...</h3>
-		<br/>
-		<p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch..</p>
-		<br/>
-		<a class="contact-image" href="mailto:name@email.com"><img src="images/contact-us.png" alt="contact-me" style="width:100px;height:50px;" /></a>
+
+</section>
+
+
+	<!-- Testimonials -->
+
+<section id="testimonials">
+
+	<div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" data-bs-pause="hover" data-touch="true">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+				<img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+				<em>Pebbles, New York</em>
+			</div>
+			<div class="carousel-item">
+				<h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+				<img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+				<em>Beverly, Illinois</em>
+			</div>
+			
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 	</div>
-</div>
+
+	
+
+	
+
+</section>
 
 
-<div class="bottom-container">
-	<a class="linkedin-image" href="https://www.linkedin.com/in/benhunterengineermanager/"> <img src="images/square-linkedin.png" alt="Ben's linkedIn profile" style="width:50px;height:50px;" />
-	</a>
-	<br/>
-	<p>© 2022 Benjamin Hunter.</p>
-</div>
+	<!-- Press -->
+
+	<section id="press">
+		<img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+		<img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+		<img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+		<img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+	</section>
+
+
+	<!-- Pricing -->
+
+	<section id="pricing">
+
+		<h2>A Plan for Every Dog's Needs</h2>
+		<p>Simple and affordable price plans for your and your dog.</p>
+		
+
+			<div class="row">
+				<div class="plan-card col-lg-4 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h3>Chihuahua</h3>
+						</div>
+						<div class="card-body">
+							<h2>Free</h2>
+							<p>5 Matches Per Day</p>
+							<p>10 Messages Per Day</p>
+							<p>Unlimited App Usage</p>
+							<button type="button" class="btn btn-outline-primary btn-lg pricing-button">Sign Up</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="plan-card col-lg-4 col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h3>Labrador</h3>
+						</div>
+						<div class="card-body">
+							<h2>$49 / mo</h2>
+							<p>Unlimited Matches</p>
+							<p>Unlimited Messages</p>
+							<p>Unlimited App Usage</p>
+							<button type="button" class="btn btn-dark btn-lg pricing-button">Sign Up</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="plan-card col-lg-4">
+					<div class="card">
+						<div class="card-header">
+							<h3>Mastiff</h3>
+						</div>
+						<div class="card-body">
+							<h2>$99 / mo</h2>
+							<p>Pirority Listing</p>
+							<p>Unlimited Matches</p>
+							<p>Unlimited Messages</p>
+							<p>Unlimited App Usage</p>
+							<button type="button" class="btn btn-dark btn-lg pricing-button">Sign Up</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+	</section>
+
+
+	<!-- Call to Action -->
+
+	<section id="cta">
+
+		<h2>Find the True Love of Your Dog's Life Today.</h2>
+
+		<!-- Button Apple -->
+		<button type="button" class="btn btn-dark btn-md download-button">
+			<i class="fa-brands fa-apple"></i>
+			Download
+		</button>
+
+		<!-- Button Windows -->
+		<button type="button" class="btn btn-outline-light btn-md download-button">
+			<i class="fa-brands fa-windows"></i>
+			Download
+		</button>
+
+		<!-- Button Google Play -->
+		<button type="button" class="btn btn btn-dark btn-md download-button">
+			<i class="fa-brands fa-google-play"></i>
+			Download
+		</button>
+
+	</section>
+
+
+	<!-- Footer -->
+
+<footer id="footer">
+	<i class="fa-brands fa-twitter footer-icon fa-2x"></i>
+	<i class="fa-brands fa-facebook-f footer-icon fa-2x"></i>
+	<i class="fa-brands fa-instagram footer-icon fa-2x"></i>
+	<i class="fa-solid fa-envelope footer-icon fa-2x"></i>
+
+	<p>© Copyright Ben Hunter, TinDog</p>
+
+</footer>
+
 
 </body>
+
 </html>
